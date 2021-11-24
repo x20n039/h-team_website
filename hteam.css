@@ -65,5 +65,11 @@ span {
     margin-left: 10px;
     position: absolute;
     width: 640px;
-    
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
