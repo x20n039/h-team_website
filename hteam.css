@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'k8x12sregular';
+    src: url('font/k8x12s.woff2') format('woff2'),
+         url('font/k8x12s.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.white-text {
+    color: #bff0e9;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1em;
+}
+
+html,body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    font-family: 'k8x12sregular';
+    font-size: 14px;
+} 
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #201; background-repeat: repeat; background-size: auto;
+}
+
+.head {
+    width: 640px;
+    background-color: black;
+    outline-style: solid;
+    outline-offset: 4px;
+    opacity: 0.75;
+}
+
+span {
+    font-size: 15px;
+}
+
+.main {
+    width: 640px;
+    height: 480px;
+    background-color: black;
+    outline-style: solid;
+    outline-offset: 4px;
+    opacity: 0.75;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper {
+    margin-left: 10px;
+    position: absolute;
+    width: 640px;
+}
+
+#unity-container {
+    position: absolute;
+}
+
+#unity-container.unity-mobile {
+    width: 100%;
+    height: 100%;
+}
+
+#unity-canvas {
+    background: #231F20
+}
+
+.unity-mobile #unity-canvas {
+    width: 100%;
+    height: 100%;
+}
+
+#unity-loading-bar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#unity-logo {
+    width: 154px;
+    height: 130px;
+    background: url('web_test_webgl2/TemplateData/unity-logo-dark2.png') no-repeat center;
+}
+
+#unity-progress-bar-empty {
+    width: 141px;
+    height: 18px;
+    margin-top: 10px;
+    background: url('web_test_webgl2/TemplateData/progress-bar-empty-dark.png') no-repeat center;
+}
+
+#unity-progress-bar-full {
+    width: 0%;
+    height: 18px;
+    margin-top: 10px;
+    background: url('web_test_webgl2/TemplateData/progress-bar-full-dark.png') no-repeat center;
+}
+
+#unity-footer {
+    position: absolute;
+}
+
+.unity-mobile #unity-footer {
+    display: none;
+}
+
+#unity-build-title {
+    float: right;
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+#unity-fullscreen-button {
+    position: absolute;
+    right: -547px;
+    float: right;
+    width: 152px;
+    height: 38px;
+    background: url('web_test_webgl2/TemplateData/fullsc_button.png') no-repeat center;
+}
+
+#unity-mobile-warning {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%);
+    background: white;
+    padding: 10px;
+    display: none;
+}
+
+.font_change {
+    font-family: 'k8x12sregular';
+    color: white;
+}
